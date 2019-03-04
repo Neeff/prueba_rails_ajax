@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Company.destroy_all
 Claim.destroy_all
+AdminUser.destroy_all
 
 
 20.times do
@@ -23,3 +24,4 @@ users = User.all.pluck(:id)
 250.times do |i|
   Claim.create(claim: "reclamo #{i}",user_id: users.sample, company_id: companies.sample)
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
