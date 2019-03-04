@@ -24,4 +24,4 @@ users = User.all.pluck(:id)
 250.times do |i|
   Claim.create(claim: "reclamo #{i}",user_id: users.sample, company_id: companies.sample)
 end
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@app.com', password: 'SomePassword', password_confirmation: 'SomePassword')
