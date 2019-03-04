@@ -1,0 +1,6 @@
+<tr id="<%= company.id%>">
+        <th scope="row"><%= company.name %></th>
+        <td><%= link_to "Show", company_path(company), class: 'btn btn-primary' %></td>
+        <td><%= link_to "Editar",edit_company_path(company) , data:{ remote: true }, class: 'btn btn-warning' %></td>
+        <td><%= link_to "Delete", company_path(company), method: :delete, data:{ confirm: "are you sure", remote: true}, class: 'btn btn-danger' %></td>
+      </tr>

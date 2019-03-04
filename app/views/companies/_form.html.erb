@@ -1,0 +1,9 @@
+<div class="row">
+                <div class="col col-md-6">
+                        <%= form_with(model: company) do |f|  %>
+                                <%= f.label :Name_Company %>
+                                <%= f.text_field :name, class: 'form-control'%>
+                                <%= f.submit 'New Company', class: 'btn btn-success'%>
+                        <% end %>
+                </div>
+        </div>

@@ -1,0 +1,2 @@
+$('#claims').prepend("<div class='alert alert-warning' role='alert'><%=  @claim.claim%><span class='badge badge-success'><strong>By:</strong><%=@claim.user.email.split('@')[0]%></span></div>");
+$('#claim_claim').val('');
